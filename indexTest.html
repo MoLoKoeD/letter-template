@@ -1,0 +1,407 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>HTML Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+  <!-- Web Font / @font-face : END -->
+  <style>
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 100%;
+    }
+
+    [style*="Tahoma"] {
+      font-family: 'Tahoma', arial, sans-serif !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    .mr-10 {
+      margin-right: 7px;
+    }
+
+    .mb-20 {
+      margin-bottom: 20px;
+    }
+
+    .pt-20 {
+      padding-top: 20px;
+    }
+
+    .pb-10 {
+      padding-bottom: 7px;
+    }
+    
+    .pb-20 {
+      padding-bottom: 20px;
+    }
+
+    .table-1 {
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+
+    .table-2 {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+
+    .table-1__td-1 {
+      width: 300px;
+    }
+
+    .table-2__td-1 {
+      width: 400px;
+    }
+
+    .table-1__td-2 {
+      margin-left: 70px;
+    }
+
+    .title-1 {
+      line-height: 37.5px;
+      font-size: 32px;
+      font-weight: 900;
+      color: #3E356A;
+      margin-bottom: 10px;
+    }
+
+    .title-2 {
+      line-height: 25.78px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #3E356A;
+      margin-bottom: 20px;
+    }
+
+    .descr {
+      line-height: 28.13px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #3E356A;
+    }
+
+    .descr-2 {
+      line-height: 18.75px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #3A3A3A;
+    }
+
+    .descr-3 {
+      line-height: 18.75px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #3E356A;
+    }
+
+    .small-descr {
+      line-height: 18.75px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #3E356A;
+    }
+
+    .special-descr {
+      word-spacing: -2.5px;
+    }
+
+    @media (max-width: 700px) {
+      .table-640 {
+        width: 300px !important;
+      }
+
+      .table-580 {
+        width: 260px !important;
+      }
+
+      .table-1__td-1 {
+        width: 180px;
+      }
+
+      .table-1__td-2 {
+        margin-left: 0;
+      }
+
+      .title-1 {
+        line-height: 22.5px;
+        font-size: 18px;
+      }
+
+      .descr {
+        line-height: 23.13px;
+        font-size: 16px;
+      }
+
+      .title-2 {
+        line-height: 18.78px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .descr-2 {
+        line-height: 16.75px;
+        font-size: 14px;
+      }
+
+      .small-descr {
+        line-height: 16.75px;
+        font-size: 14px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0;" bgcolor="#fafafa">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">
+		Прехедер
+  </div>
+	<table cellpadding="0" cellspacing="0" class="table-640" width="640" bgcolor="#ffffff" align="center">
+    <tr>
+      <td>
+
+        <table cellpadding="0" cellspacing="0" class="table-640" width="640" bgcolor="#ffffff" align="center">
+          <tr>
+            <td class="table-1" bgcolor="#E6E1EB" style="background-image: url(/img/Rectangle\ 16.png);">
+              <table cellpadding="0" cellspacing="0" class="table-580" width="580" align="center">
+                <tr>
+                  <td class="table-1__td-1">
+                    <h1 class="title-1" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                      НАЗВАНИЕ
+                    </h1>
+                    <p class="descr" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                      Что следует помнить о сезонной депрессии и причем тут агомелатин?
+                    </p>
+                  </td>
+                  <td>
+                    <img src="/img/Group 9174.png" class="table-1__td-2" alt="Рисунок1">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+        <table cellpadding="0" cellspacing="0" class="table-640" width="640" bgcolor="#ffffff" align="center">
+          <tr>
+            <td class="table-2">
+              <table cellpadding="0" cellspacing="0" class="table-580" width="580" bgcolor="#ffffff" align="center">
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" class="table-580 mb-20" width="580" bgcolor="#ffffff" align="center">
+                      <tr>
+                        <td>
+                          <h2 class="title-2" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                            Добрый день, Имя Отчество!
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="descr-2" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                            <span class="small-descr">Сезонное аффективное расстройство</span>&nbsp;&mdash; это тип депрессивного <br> расстройства, связанный со&nbsp;сменой времен года и&nbsp;характеризующийся:
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" class="table-580 mb-20" width="580" bgcolor="#ffffff" align="center">
+                      <tr>
+                        <td class="table-2__td-1">
+                          <table cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                            <tr>
+                              <td>
+                                <img class="mr-10 pb-10" src="/img/Group 9217.svg" alt="Клякса">
+                              </td>
+                              <td>
+                                <p class="descr-2 pb-10" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                                  грустью,
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img class="mr-10 pb-10" src="/img/Group 9217.svg" alt="Клякса">
+                              </td>
+                              <td>
+                                <p class="descr-2 pb-10" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                                  усталостью,
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img class="mr-10 pb-10" src="/img/Group 9217.svg" alt="Клякса">
+                              </td>
+                              <td>
+                                <p class="descr-2 pb-10" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                                  низким уровнем энергии,
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img class="mr-10 pb-10" src="/img/Group 9217.svg" alt="Клякса">
+                              </td>
+                              <td>
+                                <p class="descr-2 pb-10" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                                  проблемами со сном,
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img class="mr-10 pb-10" src="/img/Group 9217.svg" alt="Клякса">
+                              </td>
+                              <td>
+                                <p class="descr-2 pb-10" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                                  трудностями с концентрацией внимания.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="img">
+                          <img class="hidden" src="/img/Group 9211.svg" alt="Рисунок2">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" class="table-580 mb-20" width="580" bgcolor="#ffffff" align="center">
+                      <tr>
+                        <td>
+                          <p class="descr-2" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                            В отличие от других видов депрессии, сезонное аффективное расстройство <span class="small-descr">связано исключительно со сменой времен года.</span>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" class="table-580" width="580" bgcolor="#ffffff" align="center">
+                      <tr>
+                        <td>
+                          <img class="hidden" src="/img/Vector.svg" alt="Рисунок3">
+                        </td>
+                        <td width="480">
+                          <p class="descr-2" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                            Одним из частых проявлений депрессивного расстройства является <span class="small-descr">нарушение сна</span>, что связано с нарушением циркадианного ритма в межсезонные периоды<sup>1</sup>.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+    <tr>
+      <td class="pb-20 pt-20" bgcolor="#E6E1EB">
+
+        <table cellpadding="0" cellspacing="0" class="table-640" width="640" align="center">
+          <tr>
+            <td>
+              <table cellpadding="0" cellspacing="0" class="table-580 mb-20" width="580" align="center">
+                <tr>
+                  <td>
+                    <img class="hidden" src="/img/Group 9214.png" alt="Рисунок4">
+                  </td>
+                  <td width="450">
+                    <p class="descr-3 special-descr" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                      <span class="small-descr">Агомелатин</span> усиливает высвобождение дофамина и норадреналина, в особенности в области префронтальной коры головного мозга и не влияет на концентрацию внеклеточного серотонина<sup>2</sup>.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table cellpadding="0" cellspacing="0" class="table-580" width="580" align="center">
+                <tr>
+                  <td>
+                    <p class="descr-3 special-descr" style="font-family: Tahoma, Geneva, Verdana, sans-serif;">
+                      Он <span class="small-descr">восстанавливает физиологическую структуру сна</span> у пациентов, что особенно важно в период изменения длительности светового дня, а также <span class="small-descr">не оказывает отрицательного воздействия на внимательность и память<sup>2</sup>.</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
